@@ -1,0 +1,15 @@
+<mat-card class="card" [style]="'background-color: ' + background + '; color: '+color+';height:'+height+'px;' ">
+  
+        <mat-card-title class="titulo">{{titulo}}</mat-card-title>
+     <div class="preco">
+       <p id="preco1">$</p>
+       <p id="preco2">{{conteudo1}}</p>
+      </div>
+   
+    <mat-card-content class="linhas">{{conteudo2}}</mat-card-content>
+    <mat-card-content class="linhas">{{conteudo3}}</mat-card-content>
+    <mat-card-content class="linhas">{{conteudo4}}</mat-card-content>
+    <mat-button-toggle (click)="evento()"  
+    class="botao" [style]="'color:'+btnColor+';'">Learn More</mat-button-toggle>
+ 
+</mat-card>
